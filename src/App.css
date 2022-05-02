@@ -1,0 +1,21 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.App {
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.3rem;
+  background: #d9d8d8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a9a9a9;
+}

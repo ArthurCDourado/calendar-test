@@ -1,0 +1,133 @@
+.year-view {
+    justify-content: center;
+    display: grid;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    grid-template-columns: repeat(auto-fit, 15rem);
+    grid-template-rows: repeat(auto-fit, 21rem);
+    grid-column-gap: 1rem;
+}
+
+.year-view .month .days-disposition {
+    width: 14rem;
+    font-size: 0.7rem;
+    display: grid;
+    grid-template-columns: repeat(7, 2rem);
+    grid-template-rows: repeat(5, 2rem);
+    text-align: center;
+}
+
+.year-view .month .days-disposition .day {
+    border-radius: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    overflow: hidden;
+}
+
+.year-view .month .days-disposition > div {
+    border: none;
+}
+
+.month-view .month .days-disposition > div {
+    border: 0.10rem solid #e6e6ea;
+}
+
+.days-disposition {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0;
+    grid-auto-flow: row;
+}
+
+.year-view .month .weekNames {
+    height: 2rem;
+    width: 2rem;
+    display: grid;
+    font-weight: bold;
+    grid-template-columns: repeat(7, 2rem);
+    text-align: center;
+}
+
+.month-view .month .weekNames {
+    display: grid;
+    font-weight: bold;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.month-view .month .weekNames > div {
+    background-color: #e6e6ea;
+    border: 0.10rem solid #707070;
+}
+
+.year-view .month .days-disposition .day:hover {
+    background-color: #efefef;
+}
+
+.month-view .month .days-disposition .day {
+    height: 8.625rem;
+    overflow: hidden;
+}
+
+.month-view .month .days-disposition .day header {
+    display: flex;
+    padding: 0.15rem;
+}
+
+.month-view .month .days-disposition .day .events-of-the-day-list {
+    overflow-x: hidden;
+    margin: 0.2rem;
+    border-radius: 0.2rem;
+    overflow-y: auto;
+    max-height: 6.25rem;
+}
+
+.month-view .month .days-disposition .day header .number-of-day {
+    display: inline;
+    padding: 0.25rem 0 0 0.25rem;
+}
+
+.calendar-header {
+    padding: 0.5rem 1rem 1rem 1rem;
+    display: flex;
+    gap: 1.25rem;
+    justify-content: left;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.month-name {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.not-current-month-day {
+    color: #c9c9ce;
+}
+
+.event {
+    color: white;
+    padding: 0.2rem;
+}
+
+.day .event.blue {
+    background: #0057e7;
+}
+
+.day .event.red {
+    background: #d62d20;
+}
+
+.day .event.green {
+    background: #008744;
+}
+
+.day .event.orange {
+    background: #ffa700;
+}
