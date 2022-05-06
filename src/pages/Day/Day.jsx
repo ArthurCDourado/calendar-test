@@ -53,7 +53,7 @@ const Day = props => {
     };
 
     return (
-        <div className="day" onClick={() => props.setSelectedDate(day) }>
+        <div className="day cursor-pointer" onClick={() => props.setSelectedDate(day) }>
 
             { isOpenPopup && selectedDate && selectedDate.getTime() === day.getTime() && openEventCreator() }
 
